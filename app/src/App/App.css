@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+button, li, input {
+  cursor: pointer;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 17px;
+}
+
+body {
+  background-color: peachpuff;
+  padding: 0 20px;
+  height: 100%;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: lightcoral;
+}
+#container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: pink;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+button {
+  height: 40px;
+  width: 130px;
+  border-radius: 20px;
+  margin: 0 15px 25px;
+}
+.delete-btn {
+  height: 35px;
+  width: 35px;
+  border-radius: 4px;
+  margin: 5px;
+  font-style: normal;
+}
+
+#progress {
+  width: 200px;
+  height: 20px;
+  background-color: bisque;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  position: absolute;
+  right: 160px;
+  top: 80px;
+}
+#searchMessage {
+  width: 200px;
+  height: 20px;
+  background-color: lightblue;
+  font-size: 16px;
+  margin-left: 90px;
+  visibility: hidden;
+}
+
+.list-element {
+  position: relative;
+  display: flex;
+  background-color: antiquewhite;
+  height: 70px;
+  margin: 10px;
+  min-width: 800px;
+  flex-direction: row;
+  padding: 45px 2px 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 15px;
+}
+
+.todo-text, #addTask {
+  width: 75%;
+  border-radius: 4px;
+  /* background-color: blue; */
+  font-size: 25px;
+}
+.check { 
+  background-color: green;
+  height: 30px;
+  width: 30px;
+}
+
+.black {
+  color: black;
+}
+
+.highlight {
+  background-color: palevioletred;
+  opacity: 0.5;
+}
+
+.green {
+  background-color: green;
+  opacity: 0.8;
+}
+.yellow {
+  background-color: yellow;
+  opacity: 0.5;
+}
+.red {
+  background-color: red;
+  opacity: 0.5;
+}
+.dateBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 7px;
+}
+
+
