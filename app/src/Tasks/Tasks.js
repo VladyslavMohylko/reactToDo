@@ -1,4 +1,5 @@
 import React from 'react';
+import Task from '../Task/Task';
 import './Tasks.css';
 
 class Tasks extends React.Component {
@@ -10,7 +11,9 @@ class Tasks extends React.Component {
   render() {
     return (
       <div className="container">
-        <ul></ul>
+        <ul>
+          <Task />
+        </ul>
       </div>
     );
   }

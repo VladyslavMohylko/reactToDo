@@ -1,0 +1,17 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: pink;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-around;
+}

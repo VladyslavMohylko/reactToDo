@@ -2,10 +2,28 @@ import React from 'react';
 import './Main.css';
 
 class Main extends React.Component {
-  constructor() {
-    super();
-
+  constructor(props) {
+    super(props);
+      this.tasksHolder = {};
   }
+
+  createTaskHandler = (event) => {
+    console.log(event.target.value);
+
+    const name = Date.now();
+    const a = {
+      description: event.target.value,
+      complete: false,
+    }
+
+    this.tasksHolder[name] = {
+      description: event.target.value,
+      complete: false,
+    };
+    console.log(this.tasksHolder)
+  }
+
+  
 
   render() {
     return (
@@ -15,7 +33,7 @@ class Main extends React.Component {
             <p id="complete-tasks"></p>
         </div>
         <div id="containerAddTask">
-            <input type="text" placeholder="press Enter to add new task" id="addTask" />
+            <input onKeyUp={this.createTaskHandler} type="text" placeholder="press Enter to add new task" id="addTask" />
             <button id="clearAll">Clear All</button>
             <div id="searchMessage">HAHA YOU FOUND ME</div>
         </div>
